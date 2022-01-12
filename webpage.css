@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior:smooth ;
+
+}
+
+
+ 
+/*navabar*/
+  .navbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #3b083b;
+     position: sticky;
+     top: 0;
+     height: 90px;
+    
+     
+    }
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px 0px ; 
+   float: right;
+
+    
+}
+.navbar ul li{
+display: inline-block;
+    list-style: none;
+    font-size: 1.1em ;
+    font-weight: bold;
+    text-align: center;
+    
+    
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:azure;
+    padding: 8px 25px;
+    transition: all .5s ease;
+    display: block;
+    line-height:  70px ; 
+    font: size 30px;
+    transition: .5s;
+  
+}
+.navbar ul li a:hover{
+    background-color: lightcyan;
+    color: black;
+    box-shadow: 0.0 5px grey;
+
+}
+.navbar ul ul{
+    position: absolute;
+    top:85px ;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar ul li:hover > ul{
+    top: 100px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+
+}
+.navbar ul ul li{
+    width: 100px;
+    display: list-item;
+    position: relative;
+
+    border-top: none;
+  }
+  .navbar ul ul li a{
+    line-height: 40px;
+  }
+  .navbar ul ul ul{
+    border-top: none;
+  }
+  .navbar ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  .navbar ul ul li a i{
+    margin-left: 45px;
+  }
+
+/*home section*/
+ h1{
+    
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+#Home{ background-color:#1B1212;
+    height: 900px;
+    
+}
+
+.main{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+   font-style:oblique ;
+   transform: translate(-50px,-50px);
+   font-size: 60px;
+   color: whitesmoke;
+    top: 50%;
+    left:30% ;
+   text-shadow: 0 0 10px #FF0000, 0 0 50px red;
+}
+/* about section*/
+#About{
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    height: 800px;
+    
+}
+#pic{
+    display: flex; 
+}
+#pic img{
+    width: 500px;
+    height: 600px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 15px;
+
+}
+#intro h2{
+    text-align: center;
+    text-decoration-line: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#intro h3{
+    border: 0px solid thistle;
+  padding: 50px;
+  font-family:Cursive;
+}
+
+
+/*gallary section*/ 
+#gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    background-color: rgb(252, 232, 205);
+  }
+  
+  #gallery .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  #gallery.heading.heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+  }
+  
+  #gallery .heading h3 span{
+    font-weight: 100;
+    font-size: 60px;
+    color:rgb(16, 8, 92);
+  }
+  #gallery .box{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+  }
+  
+  #gallery .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    
+  }
+  
+  #gallery .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid black ;
+    
+  }
+  
+  #gallery .btn{
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px ;
+    border-radius: 5px;
+  }
+  
+  #gallery .btn a{
+   color: #fff;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+  
+  @media only screen and (max-width: 769px){
+      #gallery .box{
+     flex-direction: column;
+    }
+  
+  #gallery .box .dream{
+    width: 100%;
+  }
+  
+  
+  @media only screen and (max-width: 643px){
+    #gallery  .heading{
+    width: 100%;
+  }
+  #gallery .heading h3{
+    font-size: 1em;
+  
+  }
+  /*family section*/
