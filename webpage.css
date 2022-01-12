@@ -120,7 +120,7 @@ display: inline-block;
    transform: translate(-50px,-50px);
    font-size: 60px;
    color: whitesmoke;
-    top: 30%;
+    top: 20%;
     left:30% ;
    text-shadow: 0 0 10px #FF0000, 0 0 50px red;
 }
