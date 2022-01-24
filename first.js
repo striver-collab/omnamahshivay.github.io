@@ -1,4 +1,4 @@
-var password="Ayra";
+var password="Dr.Nivedita";
 function passcheck(){
     if(document.getElementById('pass1').value!=password)
     {
